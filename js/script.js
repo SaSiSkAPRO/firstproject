@@ -1,7 +1,18 @@
-const FIO = [];
+const numberOfFilms = +prompt("Сколько фильмов вы уже посмотрели?");
 
-FIO[0] = prompt("Как тебя злвут");
-FIO[1] = prompt("Как твоя фамилия");
-FIO[2] = prompt("Сколько тебе лет?");
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    geners: [],
+    privat: false
+};
 
-document.write(FIO);
+const a = prompt("Последний просмотренный фильм?"),
+    b = prompt("На скольуо оцените фильм?"),
+    c = prompt("Последний просмотренный фильм?"),
+    d = prompt("На скольуо оцените фильм?");
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(personalMovieDB);
